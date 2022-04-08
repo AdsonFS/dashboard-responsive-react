@@ -21,14 +21,19 @@
   max-width: 30%;
   
   display: flex;
-  margin: 10px 10px;
+  margin: 13px 13px;
   padding: 10px;
   justify-content: center;
+  transition: transform 300ms ease-in-out;
 }
-
+.card:hover {
+  transform: scale(1.06);
+}
 
 .card-component {
   height: 100%;
   width: 100%;
   align-self: flex-end;
 }
+
+

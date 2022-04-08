@@ -16,7 +16,7 @@ export const MenuDashboard = () => {
   
   return (
     <div>
-      { finish ? <DashboardPage dashboard={user.dashboards[0]} /> : 'Carregando' }
+      { finish ? <DashboardPage dashboard={user.dashboards[0]} token={user.token} /> : 'Carregando' }
     </div>
 
   );

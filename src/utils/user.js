@@ -6,8 +6,10 @@ export const User = (flag) => {
   const [token, setToken] = useState(null);
   const [dashboards, setDashboards] = useState(null);
   const [active, setActive] = useState(false);
+
+  const urlBase = 'https://smiosapi.azurewebsites.net/';
   const [result, loading] = useFetch(
-    'https://localhost:5001/api/login', {
+    urlBase + '/api/login', {
     method: 'POST',
     headers: {
       'Accept': 'application/json, text/plain',

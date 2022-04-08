@@ -47,8 +47,8 @@ export const LiquidGauge = ({ value }) => {
             }}
             riseAnimation
             waveAnimation
-            waveFrequency={2}
-            waveAmplitude={1}
+            waveFrequency={3}
+            waveAmplitude={2}
             gradient
             // gradientStops={gradientStops}
             circleStyle={{
@@ -66,7 +66,7 @@ export const LiquidGauge = ({ value }) => {
                 fontFamily: 'Arial'
             }}
             onClick={() => {
-                this.setState({ value: Math.random() * 100 });
+                
             }}
         />
     </div>
